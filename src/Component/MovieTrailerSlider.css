@@ -1,0 +1,45 @@
+.UserMovie-slider {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.UserMovie-slide {
+    position: absolute;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UserMovie-iframe {
+    width: 100%; /* Full width */
+    height: 90%; /* Almost full height */
+    border: none;
+    z-index: 1;
+}
+
+.UserMovie-poster {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.UserMovie-slider-small {
+    position: relative;
+    overflow: hidden;
+    width: 1077px;
+    height: 500px;
+    margin: 20px auto;
+}

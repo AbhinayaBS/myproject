@@ -1,0 +1,138 @@
+.movies-page {
+    background-color: #1e1e1e;
+    color: #e5e5e5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .movies-heading,
+  .bestflm-heading {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 20px 0;
+  }
+  
+  .movies-list-container,
+  .bestflm-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie-card,
+  .bestflm-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover,
+  .bestflm-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-thumbnail,
+  .bestflm-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-info,
+  .bestflm-info {
+    padding: 15px;
+  }
+  
+  .movie-info h3,
+  .bestflm-info h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .movie-meta,
+  .bestflm-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .rating-badge {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .rating-good {
+    background-color: #4caf50;
+  }
+  
+  .rating-average {
+    background-color: #ffeb3b;
+    color: #000000;
+  }
+  
+  .rating-bad {
+    background-color: #f44336;
+  }
+  
+  .metascore-text,
+  .bestflm-txt {
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+  
+  .movie-detail-container {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .back-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .movie-header {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .movie-poster img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .movie-summary {
+    margin-top: 20px;
+  }
+  
+  .top-cast,
+  .production-team {
+    margin-top: 20px;
+  }
+  
+  .cast-member {
+    margin-bottom: 10px;
+  }
+  
+  .review-card {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .user-score {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

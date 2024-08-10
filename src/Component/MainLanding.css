@@ -1,0 +1,255 @@
+/* General Reset */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.main-landing {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 825px; /* Set to the width of your carousel */
+  height: 491px; /* Set to the height of your carousel */
+  margin: 20px auto; /* Center horizontally */
+}
+
+.slider .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%; /* Ensure slides fit the height */
+}
+
+.slider .slides img {
+  height: 100%; /* Ensure images fit the height */
+  width: auto; /* Maintain aspect ratio */
+  display: block;
+  border-radius: 5px;
+}
+
+.slider .nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider .nav-buttons .prev,
+.slider .nav-buttons .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider .nav-buttons .prev:hover,
+.slider .nav-buttons .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider .indicators {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider .indicators .dot {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider .indicators .dot.active {
+  background-color: #ffaa3c;
+}
+
+/* Latest Movies Section */
+.latest-movies {
+  display: flex;
+  gap: 10px; /* Space between cards */
+  margin-bottom: 30px;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  padding: 10px 0; /* Add vertical padding */
+}
+
+.latest-movie {
+  flex: 0 0 auto;
+  width: 180px; /* Adjust width to fit within the carousel */
+  height: 100%; /* Make cards take full height */
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.latest-movie img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Feature Section */
+.feature {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.feature .feature-title {
+  color: #ffaa3c;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.feature .feature-subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.team {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team .team-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.team .team-image img {
+  width: 100%;
+  height: auto;
+}
+
+.team .team-name {
+  font-size: 18px;
+  color: #333;
+}
+
+.team .team-title {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Contact Form Section */
+.contact-form {
+  margin-bottom: 30px;
+}
+
+.contact-form input:not([type="submit"]),
+.contact-form textarea {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.contact-form input:not([type="submit"]):focus,
+.contact-form textarea:focus {
+  border-color: #ffaa3c;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #ffaa3c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #ffc06f;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .latest-movie {
+    width: 150px; /* Adjust size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .latest-movie {
+    width: 120px; /* Further adjustment for very small screens */
+  }
+}
+
+/* Adjust the position of side images */
+.side-images {
+  margin-top: 40px; /* Adjust this value to move images down */
+}
+
+.w-100 {
+  width: 70% !important;
+}
+
+
+

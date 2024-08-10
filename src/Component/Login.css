@@ -1,0 +1,114 @@
+/* LoginPage.css */
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f8f8; /* Light background for the page */
+  padding: 2rem;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333; /* Dark grey text color */
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Max width for the form */
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999999; /* Grey color for icons */
+  font-size: 1.2rem; /* Size of the icons */
+}
+
+.login-input {
+  width: calc(100% - 2rem); /* Reduce width for icon space */
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem; /* Adjust padding for icon space */
+  border: 1px solid #dddddd; /* Light grey border */
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.password-container {
+  position: relative;
+}
+
+.show-password-btn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #ff7f50; /* Coral color for button */
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+  
+}
+
+.login-submit-btn {
+  width: 92%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff7f50; /* Coral background color */
+  color: #ffffff; /* White text color */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-submit-btn:hover {
+  background-color: #e06c3b; /* Darker coral on hover */
+}
+
+.login-footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login-link {
+  color: #ff7f50; /* Coral color for links */
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.login-footer-text {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #333333; /* Dark grey text color */
+}
+
+
+/* Login.css */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9em;
+}

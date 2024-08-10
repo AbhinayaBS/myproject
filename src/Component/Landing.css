@@ -1,0 +1,389 @@
+/* LandingPage.css */
+
+.landing-page-container {
+  padding: 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 80px; /* Add space for the navbar */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Welcome Message */
+.welcome-message {
+  margin-bottom: 2rem;
+}
+
+.welcome-message h1 {
+  font-size: 2.5rem;
+  color: #333333;
+}
+
+/* Section Headers */
+.popular-films-section h2,
+.top-10-section h2,
+.upcoming-movies-section h2 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+.section-divider {
+  width: 100px;
+  border: 1px solid #333333;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+/* Films Grid */
+.films-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.film-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px; /* Uniform width for all cards */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.film-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.film-image {
+  width: 100%;
+  height: 300px; /* Uniform height for all images */
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.film-title {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+  color: #333333;
+}
+
+.film-details {
+  padding: 0 1rem 1rem;
+}
+
+.film-rating {
+  display: block;
+  font-size: 1rem;
+  color: #ffcc00; /* Gold color for star ratings */
+}
+
+.film-date {
+  display: block;
+  font-size: 0.875rem;
+  color: #777777;
+}
+
+/* Top 10 Section */
+.top-10-section {
+  margin-top: 2rem; /* Reduced space between sections */
+}
+
+.top-10-section h2 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+/* Upcoming Movies Section */
+.upcoming-movies-section {
+  margin-top: 2rem;
+}
+
+.upcoming-movies-section .films-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.upcoming-movies-section .film-card {
+  width: 200px; /* Consistent card width */
+  height: auto; /* Auto height based on content */
+}
+
+/* Slick Carousel Customization */
+.slick-slider {
+  position: relative;
+  margin: 0 auto; /* Center the carousel */
+  padding: 0; /* Removed padding */
+  max-width: 100%; /* Ensure full width */
+  overflow: hidden; /* Prevent scrollbar */
+}
+
+.slick-slide {
+  padding: 0 5px; /* Space between slides */
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 25px; /* Adjusted size for better fit */
+  height: 25px;
+  padding: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: color 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #333;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 18px; /* Adjusted size for better fit */
+  line-height: 1;
+  color: #333;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: 10px; /* Adjusted position */
+}
+
+.slick-next {
+  right: 10px; /* Adjusted position */
+}
+
+.slick-prev:before {
+  content: '←';
+}
+
+.slick-next:before {
+  content: '→';
+}
+
+.slick-dots {
+  bottom: -20px; /* Reduced space below dots */
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #333;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
+  opacity: 1;
+}
+
+.slick-track {
+  height: 270px;
+}
+
+/* Latest News Section */
+.latest-news-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.latest-news-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-divider {
+  width: 100px;
+  border: 1px solid #ccc;
+  margin: 1rem auto;
+}
+
+.news-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.news-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  width: 80%; /* Reduced width of card */
+  margin: 0 auto; /* Center the card horizontally */
+  justify-content: flex-start; /* Align content to the left */
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.news-image {
+  width: 250px; /* Increased width of image */
+  height: 150px; /* Increased height of image */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.news-content {
+  flex: 1; /* Take the remaining space */
+  padding-left: 1rem; /* Space between image and content */
+  border-left: 1px solid #ccc; /* Line separator */
+  text-align: left; /* Align text to the left */
+}
+
+.news-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.news-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.news-link {
+  color: #ff7f50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.news-link:hover {
+  color: #333;
+}
+
+/* Specific adjustments for "Happy Together" content */
+.news-card.special {
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: flex-start; /* Align items to the left */
+}
+
+.news-image.special {
+  width: 100%; /* Full width for the image */
+  height: auto; /* Auto height to maintain aspect ratio */
+  margin-right: 0; /* Remove right margin */
+  margin-bottom: 1rem; /* Add bottom margin for spacing */
+}
+
+.news-content.special {
+  padding-left: 0; /* Remove left padding */
+  border-left: none; /* Remove left border */
+}
+
+
+
+
+
+
+
+
+.reviews-section {
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+
+.reviews-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.review-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 100%;
+  
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.review-image {
+  width: 80px; /* DP size */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 2px solid #ddd;
+}
+
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.reviewer-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
+
+.review-rating .star {
+  color: #ffc107;
+}
+
+.review-date {
+  margin-left: 10px;
+  font-size: 0.85em;
+  color: #888;
+}
+
+.review-content {
+  margin-left: auto;
+  padding-left: 20px;
+  font-size: 1em;
+  color: #444;
+  flex-basis: 50%;
+}

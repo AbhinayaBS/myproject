@@ -1,0 +1,76 @@
+.bodycar{ 
+    background-color: rgb(255, 248, 248);
+    height: 100%;
+    width: 100%;
+} 
+  .movie-slider-container {
+    color: white; 
+    padding: 20px;
+  }
+  
+  .page-title {
+    color: red; 
+    text-align: center; 
+   margin-top: 0px; 
+    font-size: 1.8em;
+    font-weight: bold; 
+    margin-left: -1300px;
+  }
+  
+  .movie-slider {
+    padding: 0; 
+  }
+  
+  .movie-card1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px; 
+    height: 300px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+  }
+  
+  .movie-card h2 {
+    font-size: 1em; 
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: center; 
+  }
+  
+  .movie-card p {
+    padding: 0 10px 10px;
+    color: #555;
+    font-size: 0.9em; 
+    text-align: center; 
+  }
+  
+  
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+    background-color: red; 
+    border-radius: 50%;
+    color: #fff;
+    z-index: 1; 
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px;
+    color: #fff;
+  }

@@ -1,0 +1,129 @@
+/* Navbar.css */
+body {
+    margin: 0; /* Ensure no extra margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff; 
+    color: #333333; /* Dark grey text color */
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .navbar:hover {
+    background-color: #f8f8f8; /* Slightly off-white on hover */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    background-image: url('logo.jpg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 50px;
+    width: 200px;
+    padding-left: 60px;
+    box-sizing: border-box;
+  }
+  
+  .navbar-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #333333;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:not(.login)::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff7f50;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .nav-link:not(.login):hover::after {
+    width: 100%;
+  }
+  
+  .nav-link:not(.login):hover {
+    color: #ff7f50;
+  }
+  
+  .nav-link.login {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ff7f50;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .nav-link.login:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  .nav-link.login .login-icon {
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+  
+    .navbar-links a {
+        margin: 0.5rem 0;
+    }
+  
+    .navbar-links.active {
+        display: flex;
+    }
+  }
+  

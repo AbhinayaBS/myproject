@@ -1,0 +1,163 @@
+/* RegistrationForm.css */
+.registration-container {
+    display: flex;
+    flex-direction: row-reverse; /* Image card on the left */
+    align-items: stretch; /* Make sure both cards stretch to the same height */
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0;
+    padding: 2rem;
+    box-sizing: border-box;
+    gap: 2rem; /* Space between the cards */
+}
+
+.registration-card, .image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Set a max width for large screens */
+    box-sizing: border-box;
+    flex: 1; /* Allow cards to grow and shrink as needed */
+    min-height: 500px; /* Minimum height to maintain appearance */
+}
+
+.registration-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888888;
+}
+
+.registration-input {
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 2.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.registration-checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.registration-checkbox {
+    margin-right: 0.5rem;
+}
+
+.registration-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.registration-checkbox-label {
+    font-size: 0.875rem;
+    color: #333333;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: calc(100% - 24px);
+}
+
+.registration-checkbox-label a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.registration-checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+.registration-submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7f50;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-submit-btn:hover {
+    background-color: #e06c3b;
+}
+
+.registration-footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.registration-footer-text {
+    font-size: 0.875rem;
+    color: #333333;
+}
+
+.registration-link {
+    color: #ff7f50;
+    text-decoration: none;
+    margin-left: 0.3rem;
+}
+
+.registration-link:hover {
+    text-decoration: underline;
+}
+
+.image-card {
+    display: flex;
+    align-items: center; /* Center align image vertically */
+    justify-content: center; /* Center align image horizontally */
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto; /* Adjust height automatically */
+    max-height: 100%; /* Ensure image does not exceed card height */
+    object-fit: contain; /* Ensure the entire image is visible */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .registration-container {
+        flex-direction: column; /* Stack cards vertically */
+        padding: 1rem;
+    }
+
+    .registration-card, .image-card {
+        max-width: 90%; /* Take most of the screen width */
+        min-height: auto; /* Adjust height automatically */
+    }
+
+    .image-card img {
+        max-height: 300px; /* Limit image height on smaller screens */
+    }
+}

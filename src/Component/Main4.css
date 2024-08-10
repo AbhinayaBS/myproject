@@ -1,0 +1,166 @@
+MainLanding.css
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .main-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main-left-column {
+    flex: 1;
+    padding: 35px;
+  }
+  
+  .main-middle-column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main-part4th {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main-poster {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-poster img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 30px;
+  }
+  
+  .main-where-to-watch {
+    width: 90%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .main-where-to-watch h2 {
+    margin: 0 0 10px 0;
+  }
+  
+  .main-where-to-watch button {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-where-to-watch button:hover {
+    background-color: #0056b3;
+  }
+  
+  .main-details h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .main-details p {
+    margin: 10px 0;
+  }
+  
+  .main-cast .main-cast-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main-cast .main-cast-list span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .main-sign-in {
+    margin-bottom: 20px;
+  }
+  
+  .main-sign-in button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-sign-in button:hover {
+    background-color: #0056b3;
+  }
+  
+  .main-ratings {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .main-rating-graph {
+    margin: 10px 0;
+  }
+  
+  .main-rating-bar {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 5px;
+  }
+  
+  .main-reviews {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  
+  .main-review {
+    margin-top: 10px;
+  }
+  
+  .main-add-review {
+    margin-top: 20px;
+  }
+  
+  .main-add-review input,
+  .main-add-review textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .main-add-review button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-add-review button:hover {
+    background-color: #0056b3;
+  }
+  

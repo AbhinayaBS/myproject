@@ -1,0 +1,113 @@
+/* Card styling */
+.Ls2-card {
+    width: 100%;
+    max-width: 900px; /* Adjust as needed */
+    margin: 20px auto; /* Center horizontally and add vertical spacing */
+    border: 1px solid #ddd; /* Light border for card effect */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure contents do not overflow the card */
+    background-color: #fff; /* White background */
+  }
+  
+  /* Card content area */
+  .Ls2-card-content {
+    padding: 20px; /* Add padding inside the card */
+  }
+  
+  /* Carousel styling */
+  .Ls2-carousel-wrapper {
+    width: 100%;
+    height: 75vh; /* 75% of the viewport height */
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+  }
+  
+  .Ls2-video-carousel {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Ls2-carousel-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Thumbnail styling */
+  .Ls2-carousel-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    border-radius: 8px;
+    margin-top: 30;
+  }
+  
+  /* Title styling */
+  .Ls2-carousel-title {
+    position: absolute;
+    bottom: 10px; /* Adjust position as needed */
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  /* Card styling */
+.Ls2-card {
+    width: 100%;
+    max-width: 900px; /* Adjust as needed */
+    margin: 20px auto; /* Center horizontally and add vertical spacing */
+    border: 1px solid #ddd; /* Light border for card effect */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure contents do not overflow the card */
+    background-color: #fff; /* White background */
+  }
+  
+  /* Card content area */
+  .Ls2-card-content {
+    padding: 0; /* Remove padding to allow the carousel to fit the card */
+  }
+  
+  /* Carousel wrapper to ensure it fits the card size */
+  .Ls2-carousel-wrapper {
+    width: 100%;
+    height: 100%; /* Full height of the card */
+  }
+  
+  /* Carousel styling */
+  .Ls2-video-carousel {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Ls2-carousel-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Thumbnail styling */
+  .Ls2-carousel-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    border-radius: 0; /* No rounded corners on thumbnails */
+  }
+  
+  /* Title styling */
+  .Ls2-carousel-title {
+    position: absolute;
+    bottom: 10px; /* Adjust position as needed */
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  

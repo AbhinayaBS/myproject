@@ -1,0 +1,154 @@
+/* Footer.css */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff; /* Same background color as navbar */
+    color: #333333; /* Dark grey text color */
+    position: relative; /* Ensure it's not fixed */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Inverted shadow for bottom */
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-top: 430px;
+}
+
+/* Ensure footer and navbar have the same color and style */
+.footer:hover {
+    background-color: #f8f8f8; /* Slightly off-white on hover */
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    background-image: url('C:\Users\Abhi\OneDrive\Desktop\Movie-Review-System\movie_review\src\NaveBar\logo.jpg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 50px;
+    width: 200px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.footer-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #333333;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.footer-link:not(.login)::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff7f50;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-link:not(.login):hover::after {
+    width: 100%;
+}
+
+.footer-link:not(.login):hover {
+    color: #ff7f50;
+}
+
+.footer-link.login {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ff7f50;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.footer-link.login:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.footer-link.login .login-icon {
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .footer-links a {
+        margin: 0.5rem 0;
+    }
+
+    .footer-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+/* Footer Social Logos */
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social a {
+    margin-right: 15px; /* Adds space between logos */
+    font-size: 1.5rem; /* Adjust size for better visibility */
+    color: #333333; /* Optional: color for the icons */
+    transition: color 0.3s ease;
+}
+
+.footer-social a:last-child {
+    margin-right: 0; /* Removes margin from the last logo */
+}
+
+.footer-social a:hover {
+    color: #ff7f50; /* Changes color on hover */
+}
+
+

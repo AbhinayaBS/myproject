@@ -1,0 +1,153 @@
+body {
+  background-color: #ffffff;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-part3rd-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-part3rd-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.main-part3rd-column-left, .main-part3rd-column-center, .main-part3rd-column-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-part3rd-movie-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.main-part3rd-where-to-watch {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.main-part3rd-where-to-watch h3 {
+  margin-bottom: 10px;
+}
+
+.main-part3rd-where-to-watch a {
+  color: #ffaa3c;
+  text-decoration: none;
+}
+
+.main-part3rd-where-to-watch a:hover {
+  text-decoration: underline;
+}
+
+.main-part3rd-movie-details {
+  margin-bottom: 20px;
+}
+
+.main-part3rd-movie-details h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.main-part3rd-movie-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.main-part3rd-movie-details a {
+  color: #ffaa3c;
+  text-decoration: none;
+}
+
+.main-part3rd-movie-details a:hover {
+  text-decoration: underline;
+}
+
+.main-part3rd-movie-stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.main-part3rd-stat {
+  text-align: center;
+}
+
+.main-part3rd-stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+.main-part3rd-stat-label {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.main-part3rd-cast-section {
+  margin-top: 20px;
+}
+
+.main-part3rd-cast-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-part3rd-cast-section p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.main-part3rd-user-actions {
+  background-color: #4a90e2;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-part3rd-action-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-part3rd-action-button:hover {
+  background-color: #555;
+}
+
+.main-part3rd-watchlist-box, .main-part3rd-rate-box, .main-part3rd-share-box {
+  margin-top: 20px;
+}
+
+.main-part3rd-watchlist-box p, .main-part3rd-rate-box p {
+  margin-bottom: 10px;
+}
+
+.main-part3rd-share-box a {
+  color: #ffaa3c;
+  text-decoration: none;
+}
+
+.main-part3rd-share-box a:hover {
+  text-decoration: underline;
+}

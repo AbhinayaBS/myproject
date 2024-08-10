@@ -1,0 +1,48 @@
+/* Profile.css */
+
+.profile-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.profile-info p strong {
+    color: #333;
+}
+
+/* Optional: Add a profile picture styling */
+.profile-info .profile-picture {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.profile-info .profile-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+

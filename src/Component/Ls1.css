@@ -1,0 +1,58 @@
+.top-box-office-hits {
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .top-box-office-hits h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .movie-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movie-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-thumbnail {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .movie-details {
+    flex: 1;
+  }
+  
+  .movie-title {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .movie-box-office,
+  .movie-rating {
+    margin: 5px 0;
+  }
+  
+  .movie-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .movie-link:hover {
+    text-decoration: underline;
+  }
+  

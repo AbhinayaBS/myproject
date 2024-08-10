@@ -1,0 +1,56 @@
+/* Custom Main Page */
+.main-part2nd-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Custom Main Section */
+.main-part2nd-section {
+  margin-bottom: 40px;
+}
+
+.main-part2nd-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
+  padding-left: 5px;
+}
+
+.main-part2nd-heading:hover {
+  text-decoration: underline;
+}
+
+.main-part2nd-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+.main-part2nd-highlight-text {
+  font-weight: bold;
+  transition: color 0.3s ease;
+  color: black;
+}
+
+.main-part2nd-highlight-text:hover {
+  color: #ffaa3c; /* Change to desired color */
+}
+
+.main-part2nd-revisit {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); /* 9 equal columns */
+  gap: 10px; /* Space between images */
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.main-part2nd-revisit-item {
+  width: 100%;
+}
+
+.main-part2nd-revisit-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
