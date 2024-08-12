@@ -1,5 +1,6 @@
 import React from 'react';
 import './Main1.css';
+import { Link } from 'react-router-dom';
 
 const Main1 = () => {
   return (
@@ -8,7 +9,7 @@ const Main1 = () => {
         <h1>Track films you’ve watched. Save those you want to see.</h1>
         <h1></h1>
         <h1>Tell your friends what’s good.</h1>
-        <button className="hero-button">Get started — it’s free!</button>
+        <button className="hero-button"><Link to ="/signup">Get started — it’s free!</Link></button>
       </div>
     </div>
   );

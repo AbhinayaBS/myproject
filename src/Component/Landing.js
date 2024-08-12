@@ -377,6 +377,7 @@
 
 
 //ORIGINAL
+//11-08-2024 backup 
 
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
@@ -430,29 +431,7 @@ function Landing() {
         { title: 'Adios Amigo', rating: 4.7, date: '2024-08-30', imageUrl: 'ucm10.jpeg' },
     ];
 
-    const reviews = [
-        {
-            reviewerName: 'John Doe',
-            rating: 4.5,
-            date: '2024-07-01',
-            content: 'This movie was fantastic! The plot was engaging and the characters were well developed.',
-            imageUrl: 'dp1.jpg',
-        },
-        {
-            reviewerName: 'Jane Smith',
-            rating: 4.7,
-            date: '2024-07-05',
-            content: 'A very enjoyable film with great performances by the entire cast. Highly recommend!',
-            imageUrl: 'dp2.jpg',
-        },
-        {
-            reviewerName: 'Michael Brown',
-            rating: 4.6,
-            date: '2024-07-10',
-            content: 'An amazing cinematic experience. The visuals were stunning and the story was captivating.',
-            imageUrl: 'dp3.jpg',
-        }
-    ];
+    
 
     const latestNews = [
         {
@@ -549,23 +528,8 @@ function Landing() {
                     ))}
                 </div>
             </div>
-            <div className="reviews-section">
-                <h2>Latest Reviews</h2>
-                <hr className="section-divider" />
-                <div className="reviews-grid">
-                    {reviews.map((review, index) => (
-                        <div key={index} className="review-card">
-                            <img src={review.imageUrl} alt={review.reviewerName} className="reviewer-image" />
-                            <div className="review-content">
-                                <h3 className="reviewer-name">{review.reviewerName}</h3>
-                                <div className="review-rating">⭐ {review.rating}</div>
-                                <p className="review-text">{review.content}</p>
-                                <div className="review-date">Reviewed on: {review.date}</div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            
+            
             <div className="latest-news-section">
                 <h2>Latest News</h2>
                 <hr className="section-divider" />

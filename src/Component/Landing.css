@@ -4,7 +4,7 @@
   padding: 2rem;
   background-color: #f8f8f8;
   text-align: center;
-  padding-top: 80px; /* Add space for the navbar */
+  padding-top: 90px; /* Add space for the navbar */
   overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
@@ -294,12 +294,6 @@
   padding-left: 0; /* Remove left padding */
   border-left: none; /* Remove left border */
 }
-
-
-
-
-
-
 
 
 .reviews-section {

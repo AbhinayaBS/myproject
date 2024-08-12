@@ -6,7 +6,7 @@
     justify-content: center;
     min-height: 100vh; /* Full viewport height */
     background-color: #f0f0f0;
-    padding: 2rem;
+    padding: 8rem;
     box-sizing: border-box;
     gap: 2rem; /* Space between the cards */
 }

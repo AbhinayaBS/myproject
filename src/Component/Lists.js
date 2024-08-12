@@ -9,9 +9,9 @@ import MovieTrailerSlider from './MovieTrailerSlider';
 const Lists = () => {
   return (
     <div>
-    // <MovieTrailerSlider/>
+     <MovieTrailerSlider/>
     
-    // <MovieList/>
+     <MovieList/>
     
     </div>
   );

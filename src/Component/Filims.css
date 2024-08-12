@@ -1,11 +1,12 @@
-/* Films Grid */
+/* Carousel and Film Card Styles */
 .Fil2-films-grid,
 .Fil2-reviews-grid {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap; /* Ensure no wrapping */
   overflow-x: auto; /* Allow horizontal scrolling if needed */
-  height: 700px;
+  height: 900px; /* Set a height for the carousel */
+  margin-top: 30px;
 }
 
 .Fil2-film-card {
@@ -13,11 +14,14 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 200px; /* Adjust width to fit the slider setting */
-  height: 600px;
+  width: 300px; /* Adjust width for carousel setting */
+  height: 600px; /* Ensure uniform height for cards */
   text-align: center;
   margin: 0 0.5rem; /* Adjust margin for spacing */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Fil2-film-card:hover {
@@ -27,9 +31,14 @@
 
 .Fil2-film-image {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
+  height: 80%; /* Ensure image height fits the card */
+  object-fit: cover; /* Cover the allocated space without distortion */
+}
+
+.Fil2-film-title,
+.Fil2-film-details {
+  padding: 20px;
+  text-align: center;
 }
 
 .Fil2-film-title {
@@ -39,7 +48,7 @@
 }
 
 .Fil2-film-details {
-  padding: 0 1rem 1rem;
+  padding: 0 2rem 2rem;
 }
 
 .Fil2-film-copyright {
@@ -68,30 +77,35 @@
 
 /* Top 10 Section */
 .Fil2-top-10-section {
-  margin-top: 1.5rem; /* Reduced space between sections */
+  margin-top: 5.5rem; /* Adjust space between sections as needed */
   text-align: center; /* Center the heading */
-  padding: 0 4rem; /* Add more space between the edges of the viewport */
+  padding: 0 3rem; /* Space between the edges of the viewport */
 }
 
 .Fil2-top-10-section h2 {
   font-size: 1.5rem;
   color: #333333;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #333333; /* Add a line under the heading */
+  border-bottom: 2px solid #333333; /* Underline for the heading */
   padding-bottom: 0.5rem;
   display: inline-block; /* Ensure the border is under the heading */
 }
 
-.Fil2-watch-again {
-  padding: 20px;
-}
-
-.Fil2-top-10-section,
+/* Just Reviewed Section */
 .Fil2-just-reviewed-section {
+  text-align: center; /* Center the heading */
   margin-bottom: 30px;
 }
 
-/* Just Reviewed Section */
+.Fil2-just-reviewed-section h2 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333333; /* Underline for the heading */
+  padding-bottom: 0.5rem;
+  display: inline-block; /* Ensure the underline is as wide as the text */
+}
+
 .Fil2-just-reviewed-cards {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping */
@@ -99,32 +113,19 @@
   gap: 10px; /* Add space between cards */
 }
 
-.Fil2-just-reviewed-section {
-  text-align: center; /* Center the heading */
-}
-
-.Fil2-just-reviewed-section h2 {
-  font-size: 1.5rem;
-  color: #333333;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #333333; /* Add an underline */
-  padding-bottom: 0.5rem;
-  display: inline-block; /* Ensure the underline is as wide as the text */
-}
-
 .Fil2-review-card {
-  flex: 0 1 calc(20% - 10px); /* Adjust width to fit 5 cards in a row */
+  flex: 0 1 calc(20% - 10px); /* Adjust width for 5 cards in a row */
   max-width: calc(15% - 10px); /* Ensure cards do not exceed the calculated width */
   margin: 20px 5px; /* Reduced left and right margin, maintained top and bottom */
-  background-color: #ffffff; /* Add background color for contrast */
-  border: 1px solid #dddddd; /* Add border for better visibility */
-  border-radius: 5px; /* Add border radius for rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-  display: flex; /* Use flex layout */
+  background-color: #ffffff; /* Background color for contrast */
+  border: 1px solid #dddddd; /* Border for better visibility */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex; /* Flex layout */
   flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center the content */
-  padding: 10px; /* Add padding inside the card */
-  padding-left: 30PX;
+  align-items: center; /* Center content */
+  padding: 10px; /* Padding inside the card */
+  padding-left: 30px;
 }
 
 .Fil2-review-image {
@@ -137,7 +138,7 @@
 .Fil2-review-title {
   font-size: 1rem; /* Increase font size */
   color: #333333; /* Set text color */
-  margin-top: 10px; /* Add margin to space out the title */
+  margin-top: 10px; /* Space out the title */
   width: 100%; /* Ensure title takes full width */
   text-align: center; /* Center the title text */
   padding-right: 20px;
@@ -147,7 +148,7 @@
 .Fil2-popular-reviews-section {
   margin-bottom: 40px;
   padding: 0 20px;
-  text-align: center; /* Centers the section title */
+  text-align: center; /* Center the section title */
 }
 
 .Fil2-popular-reviews-cards {
@@ -164,7 +165,7 @@
   background-color: #fff;
   margin: 10px;
   overflow: hidden;
-  width: calc(50% - 30px);
+  width: calc(50% - 30px); /* Adjust width for two cards in a row */
   box-sizing: border-box;
   padding: 10px;
   align-items: flex-start; /* Align items at the start */
@@ -196,7 +197,7 @@
   color: #555;
   margin-bottom: 5px;
   text-align: left;
-  margin-left: -1px; /* Adjust this value as needed to move the date left */
+  margin-left: -1px; /* Adjust as needed to move the date left */
 }
 
 .Fil2-review-title {
@@ -206,7 +207,6 @@
   text-align: left;
 }
 
-.Fil2-review-date,
 .Fil2-review-username,
 .Fil2-review-rating,
 .Fil2-review-count {
@@ -266,6 +266,7 @@
   color: #555;
 }
 
+
 .Fil2-like-button {
   border: 1px solid red;
   padding: 5px;
@@ -292,4 +293,13 @@
 .Fil2-film-details {
   padding: 5px;
   text-align: center;
+}
+
+
+
+
+
+
+.slick-track{
+  height: 470px;
 }

@@ -238,8 +238,55 @@
 
 
 //og
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Landing from './Component/Landing'; 
+// import Films from './Component/Films'; 
+// import Lists from './Component/Lists'; 
+// import Journal from './Component/Journal'; 
+// import LoginPage from './Component/Login'; 
+// import RegistrationPage from './Component/RegistrationForm'; 
+// import MainLanding from './Component/MainLanding'; 
+// import NaveBar from './NaveBar/NaveBar'; 
+// import Footer from './Component/Footer';
+// import Main4 from './Component/Main4'; // Import Main4 component
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import './App.css';
+// import Reviews from './Component/Reviews';
+// import UserProfile from './Component/UserProfile';
+// // import Dashboard from './Component/Dashboard';
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="app-container">
+//         <NaveBar />
+//         <div className="content">
+//           <Routes>
+//            <Route path="/main-landing" element={<MainLanding />} />
+//             <Route path="/landing" element={<Landing />} />
+            
+//             <Route path="/films" element={<Films />} />
+//             <Route path="/lists" element={<Lists />} />
+//             <Route path="/journal" element={<Journal />} />
+//             <Route path="/login" element={<LoginPage />} />
+//             <Route path="/signup" element={<RegistrationPage />} />
+//             <Route path="/profile" element={<UserProfile />} />
+//             {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+//             <Route path="/reviews" element={<Reviews/>}/>
+//             <Route path="/main4/:title/:imageUrl" element={<Main4 />} /> {/* Route for Main4 */}
+//           </Routes>
+//         </div>
+//         <Footer />
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Landing from './Component/Landing'; 
 import Films from './Component/Films'; 
 import Lists from './Component/Lists'; 
@@ -249,10 +296,9 @@ import RegistrationPage from './Component/RegistrationForm';
 import MainLanding from './Component/MainLanding'; 
 import NaveBar from './NaveBar/NaveBar'; 
 import Footer from './Component/Footer';
-import Main4 from './Component/Main4'; // Import Main4 component
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import Main4 from './Component/Main4'; 
 import Reviews from './Component/Reviews';
+import UserProfile from './Component/UserProfile';
 
 function App() {
   return (
@@ -261,15 +307,17 @@ function App() {
         <NaveBar />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Landing />} />
+            <Route path="/" element={<Navigate to="/main-landing" />} />
             <Route path="/main-landing" element={<MainLanding />} />
+            <Route path="/landing" element={<Landing />} />
             <Route path="/films" element={<Films />} />
             <Route path="/lists" element={<Lists />} />
             <Route path="/journal" element={<Journal />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<RegistrationPage />} />
-            <Route path="/reviews" element={<Reviews/>}/>
-            <Route path="/main4/:title/:imageUrl" element={<Main4 />} /> {/* Route for Main4 */}
+            <Route path="/profile" element={<UserProfile />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/main4/:title/:imageUrl" element={<Main4 />} />
           </Routes>
         </div>
         <Footer />
@@ -279,6 +327,5 @@ function App() {
 }
 
 export default App;
-
 
 
