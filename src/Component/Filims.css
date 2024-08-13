@@ -14,7 +14,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px; /* Adjust width for carousel setting */
+  width: 500px; /* Adjust width for carousel setting */
   height: 600px; /* Ensure uniform height for cards */
   text-align: center;
   margin: 0 0.5rem; /* Adjust margin for spacing */
@@ -302,4 +302,18 @@
 
 .slick-track{
   height: 470px;
+}
+
+.Fil2-add-to-list-button {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Fil2-add-to-list-button:hover {
+  background-color: #e67e22;
 }

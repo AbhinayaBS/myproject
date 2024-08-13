@@ -154,3 +154,10 @@
         max-width: 90%;
     }
 }
+
+
+.movie-poster-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+  }

@@ -1,117 +1,133 @@
-/* Container for the profile page */
+/* UserProfile.css */
+
 .user-profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f8f9fa; /* Light background color */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    min-height: 100vh;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
 }
 
-/* Loading state */
-.loading {
-    font-size: 24px;
-    color: #333;
-    margin-top: 50px;
-}
-
-/* Profile header */
 .profile-header {
     display: flex;
     align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 800px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Profile image */
 .profile-image {
-    border-radius: 50%;
     width: 120px;
     height: 120px;
+    border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
 }
 
-/* Profile info */
 .profile-info {
     flex: 1;
 }
 
 .profile-info h1 {
     margin: 0;
-    font-size: 28px;
-    color: #333;
-}
-
-.profile-info .email {
-    font-size: 18px;
-    color: #666;
-}
-
-.profile-info .joined-date {
-    font-size: 16px;
-    color: #888;
-}
-
-.edit-profile-btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s;
-}
-
-.edit-profile-btn:hover {
-    background-color: #0056b3;
-}
-
-/* Reviews and activities sections */
-.user-reviews, .user-activities {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 800px;
-}
-
-.user-reviews h2, .user-activities h2 {
-    margin-top: 0;
     font-size: 24px;
     color: #333;
 }
 
-.review-list, .activity-list {
-    margin-top: 10px;
+.profile-info p {
+    margin: 5px 0;
+    color: #777;
 }
 
-.review-card, .activity-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+.edit-profile-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
-.review-card h3, .activity-card h3 {
-    margin: 0;
+.edit-profile-btn:hover {
+    background-color: #ff4d4d;
+}
+
+.user-reviews, .user-movie-list, .user-activities {
+    margin-top: 30px;
+}
+
+.user-reviews h2, .user-movie-list h2, .user-activities h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #444;
+    border-bottom: 2px solid #ff6b6b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.review-list, .movie-list, .activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-card, .movie-card, .activity-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover, .movie-card:hover, .activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.review-card h3, .movie-card h3, .activity-card h3 {
+    margin-top: 0;
     font-size: 18px;
     color: #333;
 }
 
 .review-card p, .activity-card p {
-    margin: 5px 0;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.movie-info {
+    text-align: center;
+}
+
+.movie-info h3 {
     font-size: 16px;
-    color: #555;
+    margin: 0;
+    color: #333;
+}
+
+.movie-info p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    padding: 50px;
 }

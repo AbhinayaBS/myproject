@@ -9,7 +9,7 @@ body, h1, h2, h3, p {
 .main-landing {
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 80px;
 }
 
 /* Header Section */

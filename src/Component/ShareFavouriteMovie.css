@@ -1,0 +1,156 @@
+/* General container styling */
+.share-favorite-movies {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #f7f7f7, #e9ecef);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Error and success message styling */
+  .error-message,
+  .success-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+  }
+  
+  .success-message {
+    color: #28a745;
+    background-color: #d4edda;
+  }
+  
+  /* Styling for submitted reviews */
+  .submitted-reviews {
+    margin-top: 2rem;
+  }
+  
+  .review-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-card h4 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #212529;
+  }
+  
+  .review-card p {
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  /* Movie card styling */
+  .movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .movie-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-thumbnail {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .movie-info {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .movie-info h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #343a40;
+  }
+  
+  .movie-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
